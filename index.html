@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziad Meshref - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>جبنه اسطنبولي</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="freelance.html">Freelance Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="my%20photo.jpg" alt="Ziad Meshref" width="200" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+
+    <p>
+      Hi, I'm <strong>Ziad Meshref</strong>, a Data Engineer Intern at <b>DEPI Initiative</b> 
+      and Cloud essentials Graduate from <b>NTI</b>.  
+      I have familiarity with multiple cloud platforms, and I work on different aspects of 
+      projects to choose the best approach using the most recent and efficient tools.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li>Programming: Python, C++, Data Structures, SQL</li>
+      <li>Version Control: Git, GitHub</li>
+      <li>Data Engineering: ETL pipelines, Data Modeling, Data Cleaning</li>
+      <li>Cloud Platforms: AWS (S3, EC2, RDS, IAM), Huawei Cloud (ECS, OBS, DAS), Azure (Storage, Compute, Database)</li>
+      <li>Big Data Tools: Spark, Hadoop, Kafka</li>
+      <li>Databases: MySQL, PostgreSQL</li>
+      <li>Data Visualization: Power BI, matplotlib, seaborn</li>
+      <li>web scraping: selenium, beautifulsoup</li>
+      <li>Other: Docker, HTML, CSS, JavaScript</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>🔹 AirQuality sensor pipeline for Ministry of Environment</h3>
+      <p>Built an ETL pipeline that use streaming and batching analysis on extracted data from the sensors and send it to Microsoft Azure Iot Hub and store the data in a Azure Data lake storage
+        and then ingest it in synapse analytics and use power bi to visualize it in a dashboard and send alerts to the Ministry of Environment if the data is out of the normal range.
+      </p>
+      <a href="https://github.com/nhahub/NHA-115" target="_blank">View Code</a>
+    </div>
+
+    <div class="project">
+      <h3>🔹 web scraping for historical currencies</h3>
+      <p>Built a web scraper to extract historical currency exchange rates from Apis and save the data in a excel file.</p>
+      <a href="https://github.com/propertyCracker" target="_blank">View Code</a>
+    </div>
+    <div class="project">
+      <h3>🔹 pipeline for getting currency exchange rates daily</h3>
+      <p>Built a pipeline in Airflow in a docker container that scrapes the currency exchange rates from an api every day to give a daily report and saves the data in a excel file.</p>
+      <a href="https://github.com/propertyCracker" target="_blank">View Code</a>
+    </div>
+
+    <div class="project">
+      <h3>🔹 Web Scraping for Amazon & Noon</h3>
+      <p>Built a Python web scraper to extract product data (prices, ratings, details) 
+      from Amazon and Noon to analyze e-commerce trends.</p>
+      <a href="https://github.com/propertyCracker" target="_blank">View Code</a>
+    </div>
+
+    <div class="project">
+      <h3>🔹 Amazon AWS Training Labs</h3>
+      <p>Completed labs covering AWS services like EC2, S3, RDS, IAM, and VPC, 
+      focusing on deploying scalable and secure solutions.</p>
+    </div>
+
+    <div class="project">
+      <h3>🔹 Huawei Cloud Training Labs</h3>
+      <p>Worked with Huawei Cloud services (ECS, OBS, DAS, networking) as part 
+      of NTI internship training for cloud infrastructure management.</p>
+    </div>
+
+    <div class="project">
+      <h3>🔹 Data Engineering Projects</h3>
+      <p>
+        - Built ETL pipelines with Python and SQL for data cleaning & transformation. <br>
+        - Designed relational schemas and optimized queries for analytics. <br>
+        - Implemented small-scale data warehouse for structured reporting.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ziadmeshref147@gmail.com">ziadmeshref147@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ziad-meshref-4a4b4b380" target="_blank">Ziad Meshref</a></p>
+    <p>GitHub: <a href="https://github.com/propertyCracker" target="_blank">propertyCracker</a></p>
+
+    <div class="send-message">
+      <h3>Send me a message</h3>
+      <p class="send-message-subtitle">Feel free to reach out about opportunities, collaborations, or questions.</p>
+      <form id="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="...@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="position">Position</label>
+          <input id="position" type="text" placeholder="e.g. data scientist, etc.">
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="....." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p> Ziad Meshref.</p>
+  </footer>
+</body>
+</html>
